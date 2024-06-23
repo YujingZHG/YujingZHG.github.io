@@ -1,0 +1,146 @@
+/* a minimum size of button*/
+.a_icon{
+    min-width: 44px; 
+    min-height: 44px;
+    padding:22px;
+}
+.icon_a_align{
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+}
+/*nav*/
+nav{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000;
+}
+ul{
+    position: relative;
+    display:flex;
+    text-align: center;
+}
+ul li a {
+    color:white;
+    text-decoration: none;
+}
+ul li {
+    align-items: center;
+    width: 100px;
+    display: block;
+}
+a{
+    padding: 8px;
+}
+
+ul a:hover{
+    list-style: none;
+    background-color: rgb(248, 118, 57);
+    border-radius: 32px;
+    color:#ffffff
+    
+}
+.active{
+    list-style: none;
+    background-color: rgb(28, 62, 252);
+    border-radius: 32px;
+    color:#ffffff
+}
+/*frame div*/
+.bgcolor{
+    background-color: black;
+}
+
+.centercontainer{
+    display:flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction:column;
+}
+.center_container_row{
+    display:flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction:column;
+    padding: 24px;
+}
+/*image*/
+.blackmode{
+    margin-top: 24px;
+    display:flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction:column;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#ffffff;
+    
+}
+.img_container img{
+    width:120px;
+    height:120px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.img_container img:hover {
+    transform: scale(1.2);
+}
+/* center text format*/
+/*hint text*/
+.blackModeText{
+    display: flex;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.text_me{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    width:600px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+.center_text{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    width:600px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+.center_text p {
+align-self: flex-start;
+text-align: left;
+width: 100%;  
+}
+/*about me button*/
+
+.bt_newCSS{
+    margin-top: 24px;
+    padding: 18px 20px;
+    background-color:white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/*link*/
+.a_link{
+    color:white;
+}
+/*footer*/
+.div_foot {
+    margin-top: 20px;
+    border: 10px;
+    padding-top:64px;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+}

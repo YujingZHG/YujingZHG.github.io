@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link id="styleSheet" rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/myIcon.png" type="image/png">
+    <title>Yujing</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="home.html" class="text_nav_l" aria-label="Go to Home Page">Home</a></li>
+            <li><a href="artworks.html" class="text_nav_r" aria-label="Explore Artworks">Artworks</a></li>
+            <li><a href="photos.html" class="text_nav_r" aria-label="View Photos">Photos</a></li>
+            <li><a href="me.html" class="text_nav_r" aria-label="Learn about Me">About me</a></li>
+            <li><a href="feedback.html" class="text_nav_l" aria-label="Provide Feedback">Feedbacks</a></li>
+            <li><a href="site_map.html" class="text_nav_r" aria-label="View Site Map">Site Map</a></li>
+            <li><a href="sourcelog.html" class="text_nav_r" aria-label="Access Source Log">Source</a></li>
+        </ul>
+    </nav>
+    <!-- brief introduction -->
+    <div class="bgcolor">
+        <div class="centercontainer">
+            <br>
+            <button class="bt_newCSS" aria-label="Change layout of this page" onclick="switchStyleSheet()">black</button>
+        </div>
+
+        <div class="center_container_row">
+            <div class="blackModeText">
+                <p> [Ohh!!! Something changes..]</p>
+            </div>
+
+            <div class="img_container">
+                <img src="./images/pro.png" alt="illustration_profile" width="100">
+            </div>
+
+
+            <div class="text_me">
+                <p>Hello! I'm Yujing, an international student. I Study Master of Computing.
+                </p>
+                <!-- Hello! I'm Yujing, an international student in ANU. I Study Master of Computing.
+                    And I've been in Canberra for half a year. Now live in Acton 2601. -->
+                <p>I learn painting just for fun. I can do different style in digital painting and have my own stickers
+                    artist page in <abbr title="WeChat, a popular social media application">WeChat</abbr>. And during
+                    weekend I go out for taking some photos. Because I like animals vary much.</p>
+
+            </div>
+        </div>
+        <!-- my passion-->
+        <div class="centercontainer">
+            <div class="center_text">
+                <p>
+                    I'm excited to develop my own website as a canvas for my art andphotography hobby and share my idea.
+                    When I make a new friend and talked about hobbies.
+                     I really need a webpage working as my business card. And it is not just about showing my
+                    work, it's about creating a personal connection between my friends and me.
+                </p>
+                <!-- , you know it is annoying to find pictures from different platform and the photo folders on the phone, because they are usually mix with other
+                    photos. -->
+                <a href="About_my_site.html" aria-label="More about my site" class="a_link">More about this Site</a>
+            </div>
+        </div>
+        <div class="blackmode">
+            <img src="./images/park.JPG" alt="park image" width="400">
+            <p> [You find the hidden image!]</p>
+        </div>
+        <!-- footer -->
+        <div class="div_foot">
+            <p>Contact me:</p>
+            <div class="icon_a_align">
+                <button class="b_icon" aria-label="Facebook page" onclick="window.location.href='https://www.facebook.com';" style="border: none; background: none; padding: 0;">
+                    <img src="images/Facebook_Logo.png" alt="Visit our Facebook page" width="46">
+                </button>
+            </div>
+            <p>Email: yujing.zhang@anu.edu.au</p>
+            <p>All rights reserved @Yujingzhang</p>
+        </div>
+        <script>
+            function switchStyleSheet() {
+                var button = document.querySelector('.bt_newCSS');
+                if (button.textContent === 'black') {
+                    button.textContent = 'white';
+                } else {
+                    button.textContent = 'black';
+                }
+                var stylesheet = document.getElementById('styleSheet');
+                if (stylesheet.getAttribute('href') === 'style.css') {
+                    stylesheet.setAttribute('href', 'style2_me.css');
+                } else {
+                    stylesheet.setAttribute('href', 'style.css');
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>

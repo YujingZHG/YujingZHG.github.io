@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- icon for the webpage -->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/myIcon.png" type="image/png">
+    <title>animals</title>
+</head>
+
+<body>
+    <!-- Navgation-->
+    <div class="sigle_nav">
+        <button class="bt_nav_back" onclick="window.location.href='home.html'">BACK</button>
+    </div>
+    <!-- Welcome and ACT button!-->
+    <div class="photoWelcome">
+        <h3 class="typing">Welcome back to Canberra...</h3>
+        <button id="act_button" onclick="scrollToAnchor('explore')"> Explore > </button>
+
+    </div>
+    <!--content photos for click and have fun-->
+    <div id="explore"> </div><!--this is an anchor for scroll down-->
+    <div>
+        <div class="content_photo">
+            <div class="container">
+                <!--use 'panal active' to always default dispaly the 1st image-->
+                <div class="panel active" style="background-image: url(images/photo_anuDuck.png);">
+                    <h3>Ducks</h3>
+                </div>
+                <div class="panel" style="background-image: url(images/photo_birds01.png);">
+                    <h3>Sea Gulls</h3>
+                </div>
+                <div class="panel" style="background-image: url(images/photo_birds02.png);">
+                    <h3>Noisy Miners</h3>
+                </div>
+                <div class="panel" style="background-image: url(images/photo_birds03.png);">
+                    <h3>Parrot</h3>
+                </div>
+                <div class="panel" style="background-image: url(images/photo_birds04.png);">
+                    <h3>Ardea Cinerea</h3>
+                </div>
+                <!-- too many pictures makes display slow, so delete some pictures
+                    <div class="panel" style="background-image: url(images/photo_birds05.png);">
+                        <h3>Canberra</h3>
+                    </div>
+                 -->
+                <div class="panel" style="background-image: url(images/photo_birds06.png);">
+                    <h3>Magapie</h3>
+                </div>
+
+            </div>
+        </div>
+        <div class="centercontainer">
+            <!-- when browser in the end user can go back to home-->
+            <button class="blue_button" onclick="window.location.href='home.html'"> Home </button>
+        </div>
+        <!-- footer -->
+        <div class="div_foot">
+            <p>Contact me:</p>
+            <div class="icon_a_align">
+                <a class="a_icon" aria-label="Faceboook page"
+                    href="https://www.facebook.com/share/KJw4KskijzY6zEkQ/?mibextid=dGKdO6"><img
+                        src="images/Facebook_Logo.png" alt="Facebook_Logo" width="46"></a>
+            </div>
+            <p>Email: yujing.zhang@anu.edu.au</p>
+            <p>All rights reserved @Yujingzhang</p>
+        </div>
+        <script src="scroll.js"></script>
+    </div>
+</body>
+
+</html>
