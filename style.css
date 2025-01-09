@@ -705,3 +705,52 @@ let the elements inside content_photo align horizontally
     background-color: rgb(248, 118, 57);
   
 }
+
+/* 导航栏样式 */
+.navbar {
+    background-color: #fff;
+}
+
+.custom-nav .nav-item .nav-link {
+    color: #000;
+    position: relative;
+}
+
+.custom-nav .nav-item .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #000;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s;
+}
+
+.custom-nav .nav-item .nav-link:hover::after,
+.custom-nav .nav-item .nav-link.active::after {
+    width: 100%;
+}
+
+/* 小屏幕样式 */
+@media (max-width: 767.98px) {
+    .navbar-collapse {
+        background-color: white;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    }
+
+    .custom-nav .nav-item {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .custom-nav .nav-item:last-child {
+        border-bottom: none;
+    }
+}

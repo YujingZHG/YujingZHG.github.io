@@ -4,59 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <title>my page</title>
+    <!-- 添加 Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/myIcon.png" type="image/png">
 </head>
 
 <body>
     <!-- navigation part-->
-    <nav>
-        <ul>
-            <li> <a href="index.html" aria-label="more about home page" class="active">Home</a> </li>
-            <li> <a href="artworks.html" aria-label="more about artworks" class="text_nav_r">Artworks</a> </li>
-            <li> <a href="photos.html" aria-label="more about photos" class="text_nav_r">Photos</a> </li>
-            <li> <a href="me.html" aria-label="more about me" class="text_nav_r">About me</a> </li>
-            <li> <a href="feedback.html" aria-label="submit feedbacks here" class="text_nav_r">Feedbacks</a> </li>
-            <li> <a href="site_map.html" aria-label="more about site map" class="text_nav_r">Site Map</a> </li>
-            <li> <a href="sourcelog.html" aria-label="more about sourcelog" class="text_nav_r">Source</a> </li>
-        </ul>
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: center;width:160px;">
+                <ul class="navbar-nav" >
+                    <li class="active"> <a href="index.html" aria-label="more about home page" class="nav-link active">Home</a> </li>
+                    <li class="nav-item"> <a href="artworks.html" aria-label="more about artworks" class="nav-link text_nav_r">Artworks</a> </li>
+                    <li class="nav-item"> <a href="photos.html" aria-label="more about photos" class="nav-link text_nav_r">Photos</a> </li>
+                    <li class="nav-item"> <a href="me.html" aria-label="more about me" class="nav-link text_nav_r">About me</a> </li>
+                    <li class="nav-item"> <a href="feedback.html" aria-label="submit feedbacks here" class="nav-link text_nav_r">Feedbacks</a> </li>
+                    <li class="nav-item"> <a href="site_map.html" aria-label="more about site map" class="nav-link text_nav_r">Site Map</a> </li>
+                    <li class="nav-item"> <a href="sourcelog.html" aria-label="more about sourcelog" class="nav-link text_nav_r">Source</a> </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <!-- Main Call to Action (CTA) area -->
-    <div class="header">
-        <div class="image-section">
-            <!-- Ensure proper image handling and percentage in CSS -->
-            <img src="images/photo_birds01.png" style="height: 125%;" alt="2 birds on the beach"
-                onerror="this.src='images/onerror.png'">
-        </div>
-        <div class="cta-section">
-            <div>
-                <h1>Hello Birds!</h1>
-                <p>Welcome back to Canberra! Lets explore...</p>
-                <button aria-label="Open birds photos page" onclick="window.location.href='photos_birds.html' ;" >What's New?</button>
+    <div class="header container">
+        <div class="row" style = "display: contents;margin: 0px;padding: 0px;background-color: rgb(248, 118, 57)">
+            <div class="image-section col-md-6 d-none d-md-block" style = "padding: 0px">
+                <img src="images/photo_birds01.png" class="img-fluid" alt="2 birds on the beach"
+                    onerror="this.src='images/onerror.png'">
+            </div>
+            <div class="cta-section col-lg-6 col-12">
+                <divs style = "background-color: rgb(248, 118, 57);padding-left:12px;padding-top:24px;padding-bottom:24px">
+                    <h1>Hello Birds!</h1>
+                    <p>Welcome back to Canberra! Lets explore...</p>
+                    <button class="btn btn-primary" aria-label="Open birds photos page" onclick="window.location.href='photos_birds.html';">What's New?</button>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Secondary CTA Zone -->
-
-    <div class="CTA2">
-        <img src="images/bn_feedme.gif" alt="a wallaby gif" width="120">
+    <div class="CTA2 container text-center">
+        <img src="images/bn_feedme.gif" alt="a wallaby gif" width="120" class="img-fluid">
         <h2>If you feel boring...</h2>
         <p>let's feed an animal,click "go!"</p>
-        <button class="CTA2_button" aria-label="Open video page" onclick="window.location.href='video.html';">GO!</button>
+        <button class="btn btn-primary CTA2_button" aria-label="Open video page" onclick="window.location.href='video.html';">GO!</button>
     </div>
 
     <!-- footer -->
-    <div class="div_foot">
+    <div class="div_foot container">
         <p>Contact me:</p>
         <div class="icon_a_align">
-            <a class="a_icon" aria-label="Open my Facebook page" href="https://www.facebook.com/share/KJw4KskijzY6zEkQ/?mibextid=dGKdO6"><img
-                    src="images/Facebook_Logo.png" alt="Facebook_Logo" width="46"></a>
+            <a class="a_icon" aria-label="Open my Facebook page" href="https://www.facebook.com/share/KJw4KskijzY6zEkQ/?mibextid=dGKdO6">
+                <img src="images/Facebook_Logo.png" alt="Facebook_Logo" width="46">
+            </a>
         </div>
         <p>Email: yujing.zhang@anu.edu.au</p>
         <p>All rights reserved @Yujingzhang</p>
     </div>
+
+    <!-- 添加 Bootstrap JS 和 Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="CTAjs.js"></script>
 </body>
 
